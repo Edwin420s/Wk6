@@ -1,0 +1,10 @@
+SELECT 
+    products.productName, 
+    products.productVendor, 
+    products.productLine
+FROM 
+    products
+LEFT JOIN 
+    productlines 
+ON 
+    products.productLine = productlines.productLine;
