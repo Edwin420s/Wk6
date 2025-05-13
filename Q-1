@@ -1,0 +1,11 @@
+SELECT 
+    employees.firstName, 
+    employees.lastName, 
+    employees.email, 
+    employees.officeCode
+FROM 
+    employees
+INNER JOIN 
+    offices 
+ON 
+    employees.officeCode = offices.officeCode;
