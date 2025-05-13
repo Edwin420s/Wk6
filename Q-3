@@ -1,0 +1,12 @@
+SELECT 
+    orders.orderDate, 
+    orders.shippedDate, 
+    orders.status, 
+    orders.customerNumber
+FROM 
+    customers
+RIGHT JOIN 
+    orders 
+ON 
+    customers.customerNumber = orders.customerNumber
+LIMIT 10;
